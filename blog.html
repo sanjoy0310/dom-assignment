@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DOM Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 bg-blue-400 shadow-md p-4 flex justify-between items-center">
+        <a href="index.html " class="text-black-500 bg-green-400 font-semibold px-4 py-2 rounded focus:outline-none">Home</a>
+        <div class="text-lg font-semibold flex justify-center items-center">
+            <img src="assets/logo.png" alt="Logo" class="h-8 mx-2">
+            DONATE BANGLADESH
+        </div>
+        <div class="flex items-center space-x-2">
+            <img src="assets/coin.png" alt="Coin Icon" class="h-6">
+            <span class="mr-2 text-gray-700">5500 BDT</span>
+            
+        </div>
+    </nav>
+
+    
+    <div class="container mx-auto mt-8 p-4">
+        <h1 class="text-2xl font-bold mb-6">Important FAQ</h1>
+        <div class="bg-white p-4 shadow rounded-lg space-y-4">
+            <div class="p-4 border rounded-lg">
+                <h2 class="font-semibold">What is the Document Object Model (DOM)?</h2>
+                <p>The DOM is a programming interface for web documents. It represents the page structure, allowing programs to change the document structure, style, and content.</p>
+            </div>
+            <div class="p-4 border rounded-lg">
+                <h2 class="font-semibold">How do you select an element from the DOM?</h2>
+                <p>You can select DOM elements using JavaScript methods like <code>document.getElementById</code>, <code>document.querySelector</code>, or <code>document.getElementsByClassName</code>.</p>
+            </div>
+            <div class="p-4 border rounded-lg">
+                <h2 class="font-semibold">What is event delegation in the context of the DOM, and why is it useful?</h2>
+                <p>Event delegation allows you to use a single event listener to manage similar events on multiple child elements. It's efficient and reduces the number of event listeners.</p>
+            </div>
+            <div class="p-4 border rounded-lg">
+                <h2 class="font-semibold">How do you manipulate an element's attributes and styles using the DOM?</h2>
+                <p>You can manipulate attributes with methods like <code>setAttribute</code> and <code>removeAttribute</code>. For styles, you can use the <code>style</code> property to directly modify CSS.</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
