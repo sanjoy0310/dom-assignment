@@ -29,6 +29,7 @@ function donate(campaign, currentAmount) {
 
   // Add to history 
   const historyList = document.getElementById("historyList"); 
+  
   const li = document.createElement("li"); 
   const date = new Date(); li.textContent = `${donationAmount} BDT donated to ${campaign} on ${date.toLocaleString()}`; historyList.appendChild(li);
 
