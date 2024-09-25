@@ -21,7 +21,8 @@
         height: auto;
       }
       .card-width{
-        width:350px 
+        width:auto;
+        margin: auto;
         
       
       }
@@ -55,8 +56,8 @@
 </nav>
 
   <div class="container mx-auto flex justify-center space-x-4 mt-4">
-    <button id="donationBtn" class="px-4 py-2 bg-green-500 text-white rounded focus:outline-none">Donation</button>
-    <button id="historyBtn" class="px-4 py-2 bg-gray-200 text-gray-700 rounded focus:outline-none">History</button>
+    <button id="donationBtn" class="px-4 py-2 bg-green-500 text-black font-bold rounded focus:outline-none">Donation</button>
+    <button id="historyBtn" class="px-4 py-2 bg-gray-200 text-black font-bold rounded focus:outline-none">History</button>
   </div>
 </header>
   
@@ -79,7 +80,7 @@
         <p class="text-sm mt-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
         
         <input type="number" id="noakhaliInput" class="border border-gray-300 rounded mt-2 p-2 w-full" placeholder="Write Donation Amount">
-        <div><button onclick="donate('noakhali', 9)" class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">Donate Now</button></div>
+        <div><button onclick="donate('noakhali', 9)" class="bg-green-500 text-black font-bold px-4 py-2 rounded mt-2 w-full">Donate Now</button></div>
         
       </div>
     </div>
@@ -98,7 +99,7 @@
         
         <input type="number" id="feniInput" class="border border-gray-300 rounded mt-2 p-2 w-full" placeholder="Write Donation Amount">
         <div>
-          <button onclick="donate('feni', 600)" class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">Donate Now</button>
+          <button onclick="donate('feni', 600)" class="bg-green-500 text-black font-bold px-4 py-2 rounded mt-2 w-full">Donate Now</button>
         </div>
         
       </div>
@@ -118,7 +119,7 @@
         
         <input type="number" id="quotaInput" class="border border-gray-300 rounded mt-2 p-2 w-full" placeholder="Write Donation Amount">
         <div>
-          <button  onclick="donate('quota', 2400) " class="bg-green-500 text-white px-4 py-2 rounded mt-2 w-full">Donate Now</button>
+          <button  onclick="donate('quota', 2400) " class="bg-green-500 text-black font-bold px-4 py-2 rounded mt-2 w-full">Donate Now</button>
         </div>
         
       </div>
@@ -129,9 +130,9 @@
   </div>
 
   <!-- History Section (hidden initially) -->
-  <div id="historySection" class="hidden">
-    <h2 class="font-bold text-lg mb-4">Donation History</h2>
-    <ul id="historyList" class="list-disc pl-5"></ul>
+  <div id="historySection" class="hidden bg-white rounded-lg shadow-lg p-4 mb-4  card-container ">
+    <h2 class="font-bold text-lg  text-center m-auto mb-4 ">Donation History</h2>
+    <ul id="historyList" class="text-center pl-5"></ul>
   </div>
 </div>
 <!-- Donation Confirmation Modal -->
